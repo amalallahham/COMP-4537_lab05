@@ -1,6 +1,6 @@
 "use strict";
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://comp4537-lab5-server-e1um.onrender.com/";
 
 const SQL = {
   isSelect: (s) => /^\s*select\b/i.test(s),
@@ -22,7 +22,7 @@ function pretty(obj) {
 }
 
 class ApiClient {
-  constructor(baseUrl = "http://localhost:8080") {
+  constructor(baseUrl) {
     this.baseUrl = baseUrl.replace(/\/$/, "");
     this.defaultHeaders = { Accept: "application/json" };
   }
