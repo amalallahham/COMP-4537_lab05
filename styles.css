@@ -1,0 +1,79 @@
+:root{
+  --hospital-50:#f2f7ff;
+  --hospital-100:#e6f0ff;
+  --hospital-200:#cfe1ff;
+  --hospital-300:#a6c7ff;
+  --hospital-400:#75a6ff;
+  --hospital-500:#4a87ff; 
+  --hospital-600:#2f6af1;
+  --hospital-700:#2756c3;
+  --hospital-800:#21489e;
+  --hospital-900:#1c3c83;
+}
+
+body {
+  font-family: "PT Serif", "Playfair Display", "Epunda Slab", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0b2447;
+}
+
+.bg-hospital {
+  background: linear-gradient(180deg, var(--hospital-50), #fff 35%);
+}
+
+.brand-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.hero-card {
+  background:  var( --hospital-900);
+    color: #ffffff;
+  border: 1px solid var(--hospital-200);
+}
+
+.card-light-blue {
+  background: var(--hospital-100);
+  border: 1px solid var(--hospital-200);
+}
+
+.table-hospital {
+  background: var(--hospital-100);
+  color: #0b2447;
+}
+
+.btn-primary {
+  background-color: var(--hospital-500);
+  border-color: var(--hospital-500);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--hospital-600);
+  border-color: var(--hospital-600);
+}
+.btn-outline-primary {
+  color: var(--hospital-600);
+  border-color: var(--hospital-300);
+}
+.btn-outline-primary:hover {
+  background-color: var(--hospital-100);
+  border-color: var(--hospital-400);
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+#patientTbody tr:nth-child(odd) {
+  background-color: #f8fbff;
+}
+
+.brand-logo {
+  display:inline-flex;
+  width: 34px; height: 34px;
+  align-items:center; justify-content:center;
+  border-radius: 10px;
+  background: var(--hospital-100);
+  border: 1px solid var(--hospital-200);
+}
+
